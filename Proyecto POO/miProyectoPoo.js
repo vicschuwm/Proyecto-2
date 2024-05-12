@@ -21,7 +21,7 @@ class Encuesta {
     
     votarEncuesta(){
         this.entradas.map((pregunta) => { 
-           const respuesta = prompt(`Responda: ${pregunta.pregunta}: a. ${pregunta.opciones[0]} b. ${pregunta.opciones[1]}:`);
+           const respuesta = prompt(`Responda "a" o "b", para la siguiente pregunta: \n ${pregunta.pregunta}: \n a. ${pregunta.opciones[0]} \n b. ${pregunta.opciones[1]}`);
        
         // respuestas.push(respuesta)
         // segun cada respuesta voy sumando más uno
