@@ -2,7 +2,7 @@
 function crearEncuesta() {
      encuesta = []
    
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 8; i++) {
       const pregunta = prompt(`Ingrese la pregunta número ${i + 1}:`);
       const opcion1 = prompt(`Ingrese la primera opción de respuesta para la pregunta ${i + 1}:`);
       const opcion2 = prompt(`Ingrese la segunda opción de respuesta para la pregunta ${i + 1}:`);
@@ -21,14 +21,14 @@ function crearEncuesta() {
   function votarEncuesta (encuesta) {
     respuestas = []
     encuesta.map((pregunta) => { 
-       const respuesta = prompt(`Responda: ${pregunta.pregunta}: a. ${pregunta.opciones[0]} b. ${pregunta.opciones[1]}:`);
+       const respuesta = prompt(`Responda "a" o "b" para la siguiente pregunta:\n ${pregunta.pregunta}:\n a. ${pregunta.opciones[0]} \n b. ${pregunta.opciones[1]}`);
    
     // respuestas.push(respuesta)
     // segun cada respuesta voy sumando más uno
-    if (respuesta == "a") {
+    if (respuesta == "a" || "A") {
         pregunta.votos.opcion1 +=1
     }
-    else if (respuesta == "b") {
+    else if (respuesta == "b" || "B") {
         pregunta.votos.opcion2 +=1
     }
 
