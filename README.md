@@ -15,7 +15,7 @@ Construir un programa en JavaScript que permita a los usuarios crear encuestas, 
 - Implementar la solución utilizando programación orientada a objetos (POO) o programación funcional (PF).
 - Subirás la solución a un repositorio de GitHub.
 
-## Solución explicada paso a paso
+## Solución explicada paso a paso para Programación Funcional
 
 1. Crear una función que permita al usuario ingresar preguntas y respuestas.
 - Se creó la función `crearEncuesta`, dentro de la cuál está el arreglo `encuesta`
@@ -43,4 +43,4 @@ function crearEncuesta() {
 ```
 
 2. Crear una función que permita al usuario votar entre las opciones 1 y 2 de las respuestas a las preguntas ingresadas anteriormente.
-   
+ - Se creó la función `votarEncuesta`, dentro de la cuál está el arreglo `respuestas`  
