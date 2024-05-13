@@ -20,7 +20,7 @@ Construir un programa en JavaScript que permita a los usuarios crear encuestas, 
 1. Crear una función que permita al usuario ingresar preguntas y respuestas.
 - Se creó la función `crearEncuesta`, dentro de la cuál está el arreglo `encuesta`
 - Mediante un bucle `for` se solicita al usuario que ingrese 8 preguntas y para cada una de las preguntas se le solicita que ingrese 2 opciones de respuesta.
-- Las preguntas quedan registradas en la constante `pregunta` y las respuestas en las constante `opcion1` y `opcion2`
+- Las preguntas y respuestas se almacenan dentro del array `encuesta`. Ademas se crean las constantes `pregunta`, `opcion1` y `opcion2` para registrarlas
 - Finaliza la función y se retorna el valor `encuesta`
 
 ```scss
